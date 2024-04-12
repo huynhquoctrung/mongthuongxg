@@ -1,30 +1,23 @@
-const axios = require("axios");
-const fs = require("fs");
+# Xin chào! 👋
 
-const getQuote = async () => {
-  try {
-    const { data } = await axios.get("https://quotes.rest/qod?language=en&quot;);
-    const quote = data.contents.quotes[0].quote;
-    const author = data.contents.quotes[0].author;
+Tôi là Huỳnh Quốc Trung
 
-    console.log("new quote", `"${quote}"`);
+🌟 "Hãy lắng nghe lời nói của trái tim và đường đi sẽ mở ra." ✨
 
-    return {
-      quote,
-      author,
-    };
-  } catch (err) {
-    console.error(err.message);
-    return {};
-  }
-};
+📚 Là một người đam mê công nghệ và lập trình, tôi luôn tìm kiếm cơ hội để học hỏi và phát triển kỹ năng của mình.
 
-const generate = async () => {
-  const { quote, author } = await getQuote();
+🌿 Mục tiêu của tôi là trở thành một nhà phát triển phần mềm giỏi và đóng góp vào cộng đồng công nghệ.
 
-  if (!quote) return;
+🚀 Hiện tại, tôi đang làm việc trên các dự án về App c# winform và web blazer.
 
-  fs.writeFileSync("README.md", `_**${quote}**_\n\n${author}`);
-};
+💡 "Hãy sống để trở thành phiên bản tốt nhất của chính bạn." 🌈
 
-generate();
+## Kỹ năng
+
+- Ngôn ngữ lập trình: C#, HTML/CSS
+- Framework: .net, .net core
+- Cơ sở dữ liệu: MSSQL, MySQL
+
+## Liên hệ
+
+📫 Email: huynhquoctrung.job@gmail.com
